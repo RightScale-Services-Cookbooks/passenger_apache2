@@ -7,6 +7,7 @@ default['passenger']['module_path'] = "#{passenger['root_path']}/#{Chef::Recipe:
 default['passenger']['max_pool_size'] = 6
 default['passenger']['manage_module_conf'] = true
 default['passenger']['package']['name'] = nil
+default['passenger']['gem_bin'] = 'gem'
 # set package version to nil, the distro package may not be the same version
 default['passenger']['package']['version'] = nil
 default['passenger']['ruby_bin'] = languages['ruby']['ruby_bin']
